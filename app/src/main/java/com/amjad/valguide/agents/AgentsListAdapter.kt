@@ -1,21 +1,13 @@
 package com.amjad.valguide.agents
 
-import android.app.Activity
-import android.content.ContextWrapper
-import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.app.ActivityOptionsCompat
-import androidx.core.util.Pair
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.amjad.valguide.agents.detailagent.DetailAgentActivity
 import com.amjad.valguide.core.domain.model.Agents
-import com.amjad.valguide.core.utils.Constants.EXTRA_DATA
 import com.amjad.valguide.databinding.AgentItemBinding
 import com.bumptech.glide.Glide
 

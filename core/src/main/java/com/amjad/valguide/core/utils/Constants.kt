@@ -1,5 +1,5 @@
 package com.amjad.valguide.core.utils
 
 object Constants {
-    val EXTRA_DATA = "DATA"
+    const val EXTRA_DATA = "DATA"
 }
