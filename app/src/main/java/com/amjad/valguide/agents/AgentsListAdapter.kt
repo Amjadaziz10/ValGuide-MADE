@@ -36,19 +36,9 @@ class AgentsListAdapter :
                 .into(binding.bgImg)
             binding.agentTv.text = data.displayName
             binding.root.setOnClickListener {
-//                val intent = Intent (itemView.context, DetailAgentActivity::class.java)
-//                intent.putExtra(EXTRA_DATA, data)
                 val imageViewAgent = binding.agentImg
                 val imageViewBackground = binding.bgImg
                 val textViewAgent = binding.agentTv
-//                val optionsCompat: ActivityOptionsCompat =
-//                    ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                        (itemView.context as ContextWrapper).baseContext as Activity,
-//                        Pair(binding.agentImg, "agent"),
-//                        Pair(binding.agentTv, "agent_name"),
-//                        Pair(binding.bgImg, "background")
-//                    )
-//                itemView.context.startActivity(intent, optionsCompat.toBundle())
                 onItemClickCallback.onItemClicked(data, imageViewAgent,imageViewBackground,textViewAgent)
             }
         }
