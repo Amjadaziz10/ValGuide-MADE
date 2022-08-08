@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ValGuide</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="agents">Agents</string>
+    <string name="maps">Maps</string>
+    <string name="favorite">Favorites</string>
+    <string name="valorant">Valorant</string>
+    <string name="valorant_agents">Valorant Agents</string>
+    <string name="agent">Agent</string>
+    <string name="role">Role</string>
+    <string name="abilities">Abilities</string>
+    <string name="biography">// Biography</string>
+    <string name="favorites_agents">Favorite Agents</string>
+    <string name="valorant_maps">Valorant Maps</string>
+    <string name="no_favorite_agent">No Favorite Agent</string>
+    <string name="toast_favorite">Agent set as favorite!</string>
+    <string name="toast_favorite_no">Agent removed as favorite!</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="back_button">Back Button</string>
+    <string name="background_image">Background Image</string>
+    <string name="agent_image">Agent Image</string>
+    <string name="favorite_button">Favorite Button</string>
+</resources>
