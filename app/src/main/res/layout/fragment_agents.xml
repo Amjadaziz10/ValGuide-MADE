@@ -44,16 +44,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/agents_title" />
 
-    <ProgressBar
-        android:id="@+id/p_bar"
-        style="style=?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        tools:listitem="@layout/agent_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/rv_agents" />
+        app:layout_constraintTop_toBottomOf="@+id/agents_title"
+        app:shimmer_auto_start="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+                <include layout="@layout/agent_item_placeholder" />
+            </LinearLayout>
+        </ScrollView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

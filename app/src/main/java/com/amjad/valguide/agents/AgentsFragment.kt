@@ -71,9 +71,9 @@ class AgentsFragment : Fragment() {
 
         agentsViewModel.agents.observe(viewLifecycleOwner){
             when (it) {
-                is Resource.Loading -> binding.pBar.visibility = View.VISIBLE
+                is Resource.Loading -> binding.progressBar.visibility = View.VISIBLE
                 is Resource.Success -> {
-                    binding.pBar.visibility = View.GONE
+                    binding.progressBar.visibility = View.GONE
                     adapter.submitList(it.data)
                 }
                 is Resource.Error -> {

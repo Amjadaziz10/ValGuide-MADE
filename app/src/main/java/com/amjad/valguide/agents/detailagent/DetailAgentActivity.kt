@@ -2,7 +2,6 @@ package com.amjad.valguide.agents.detailagent
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import com.amjad.valguide.R
 import com.amjad.valguide.core.domain.model.Agents
@@ -48,7 +47,6 @@ class DetailAgentActivity : AppCompatActivity() {
                 setFavoriteBtn(isFavorite)
                 binding.favoritesBtn.setOnClickListener {
                     isFavorite = !isFavorite
-                    toastFavorite(isFavorite)
                     detailAgentViewModel.setFavoriteAgent(data, isFavorite)
                     setFavoriteBtn(isFavorite)
                 }
@@ -64,13 +62,4 @@ class DetailAgentActivity : AppCompatActivity() {
             binding.favoritesBtn.setBackgroundResource(R.drawable.button_ability)
         }
     }
-
-    private fun toastFavorite(isFavorite: Boolean?){
-        if (isFavorite == true) {
-            Toast.makeText(this, R.string.toast_favorite, Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(this, R.string.toast_favorite_no, Toast.LENGTH_SHORT).show()
-        }
-    }
-
 }
