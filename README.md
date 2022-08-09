@@ -1,2 +1,2 @@
 # ValGuide-MADE
-[![amjadaziz](https://app.circleci.com/pipelines/github/Amjadaziz10/ValGuide-MADE?style=svg)](https://app.circleci.com/pipelines/github/Amjadaziz10/ValGuide-MADE)
+[![Amjadaziz10](https://circleci.com/gh/Amjadaziz10/ValGuide-MADE.svg?style=svg)](https://circleci.com/gh/Amjadaziz10/ValGuide-MADE)
