@@ -28,6 +28,7 @@ android {
     }
     lintOptions {
         disable "JvmStaticProvidesInObjectDetector", "FieldSiteTargetOnQualifierAnnotation", "ModuleCompanionObjects", "ModuleCompanionObjectsNotInModuleParent"
+        abortOnError false
     }
 }
 
